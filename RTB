@@ -1,8 +1,0 @@
-*fodddat in RTB in character/string format, before use - conversion to date SAS variable is needed*
-*code bellow takes character/string var and converts it to date*
-*RTB only month of birth available, birthday set to 15th (middle) of month for everyone*
-
-data XXX; set XXX; 
-	fodddat2=intnx('day', input(fodddat, yymmn6.),14);
-	format fodddat2 yymmdd10.;
-run;
