@@ -1,0 +1,5 @@
+*simple date conversion text to SAS date variable*
+data XXX; set XXX;  
+6 	fodddat2=intnx('day', input(fodddat, yymmn6.),14);  *middle of months set up for everyone*
+7 	format fodddat2 yymmdd10.; 
+8 run;
